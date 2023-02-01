@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a5536817-3979-4684-bfff-86ebe14d11e7" name="Changes" comment="" />
+    <list default="true" id="9d08ac36-1cff-4933-a006-9ae97b272b3f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/chanchal.net.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/monochrome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/chanchal.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/chanchal.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img_blog_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/img_blog_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img_blog_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/img_blog_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img_blog_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/img_blog_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img_btn_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/img_btn_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img_project_1_mono.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/img_project_1_mono.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img_project_2_mono.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/img_project_2_mono.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/img_project_3_mono.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/img_project_3_mono.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +31,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="276vfoUWZuFmli8pjrgyNcHgyfy" />
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/assets/css/style.css" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="2L8q3LB5mqUW1Js6Z9dGJ3Ztl4y" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -24,28 +45,34 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a5536817-3979-4684-bfff-86ebe14d11e7" name="Changes" comment="" />
-      <created>1648653455289</created>
+      <changelist id="9d08ac36-1cff-4933-a006-9ae97b272b3f" name="Default Changelist" comment="" />
+      <created>1675262856708</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1648653455289</updated>
-      <workItem from="1648653456436" duration="2917000" />
+      <updated>1675262856708</updated>
+      <workItem from="1675262857877" duration="516000" />
+      <workItem from="1675263392262" duration="2806000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/app" />
-      <path value="$PROJECT_DIR$" />
-    </ignored-roots>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
