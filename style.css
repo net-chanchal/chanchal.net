@@ -15,9 +15,6 @@ body {
     left: 0;
     top: 0;
     bottom: 0;
-    background-image: url("img/bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .area {
@@ -102,7 +99,7 @@ aside {
     position: absolute;
     bottom: 55px;
     right: 55px;
-    left: -30px;
+    left: 0;
     padding: 15px;
 }
 
@@ -123,51 +120,6 @@ aside {
     top: 3px;
 }
 
-.menu {
-    list-style: none;
-    background-color: #c8c8c8;
-    border-radius: 5px 5px 0 0;
-}
-
-.menu li {
-    display: inline-block;
-    border-bottom: solid 3px transparent;
-    margin-right: -4px;
-}
-.menu li a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 0 8px;
-    color: #212121;
-    font-weight: bold;
-}
-.menu li.active, .menu li:hover {
-    border-color: #7e969c;
-}
-.menu li span {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border-radius: 50px;
-    margin-left: 4px;
-}
-
-.menu li span.red {
-    background-color: #ff5f57;
-}
-.menu li span.yellow {
-    background-color: #febc2e;
-}
-.menu li span.green {
-    background-color: #28c841;
-}
-
-.menu li.option {
-    float: right;
-    margin-right: 15px;
-    margin-top: 3px;
-}
-
 .cv {
     text-decoration: none;
     background-color: #000000;
@@ -185,4 +137,41 @@ aside {
     border-right-color: #ffffff;
     border-left-color: #91aab0;
     border-bottom-color: #91aab0;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-us {
+        position: unset;
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+        position: unset;
+    }
+
+    .dev-img {
+        position: unset;
+    }
+
+    .heading {
+        position: absolute;
+    }
+    .heading h1 {
+        font-size: 30px
+    }
+
+    .contact {
+        position: unset;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        position: unset;
+    }
+
+    .social a {
+        display: unset;
+    }
 }
