@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #212121;
 }
 
@@ -82,7 +81,7 @@ aside {
     line-height: 42px;
 }
 
-.heading h4 {
+.heading strong {
     color: #545454;
 }
 .about-detail {
@@ -109,11 +108,12 @@ aside {
     list-style: none;
 }
 .contact ul li {
-    margin: 5px 0;
+    margin: 7px 0;
 }
 .contact ul li a {
     color: #212121;
     text-decoration: none;
+    font-size: 15px;
 }
 .contact ul li img {
     display: inline-block;
