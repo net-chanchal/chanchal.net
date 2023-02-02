@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Hind Siliguri', sans-serif;
+    color: #212121;
+}
+
+.about-us {
+    width: 60%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url("img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.area {
+    background: #ffff;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 5px;
+}
+
+aside {
+    width: 40%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #000000;
+}
+
+.dev-img {
+    position: absolute;
+    bottom: 0;
+}
+
+.dev-img img {
+    width: 100%;
+    display: block;
+}
+
+.social {
+    background-color: #91aab0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.social a {
+    display: block;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.social a:hover {
+    background-color: #7e969c;
+}
+
+.social a img {
+    width: 100%
+}
+
+.heading {
+    color: #91aab0;
+    padding: 15px;
+    position: relative;
+    z-index: 9999;
+}
+
+.heading h1 {
+    font-size: 50px;
+    line-height: 42px;
+}
+
+.heading h4 {
+    color: #545454;
+}
+.about-detail {
+    padding: 15px;
+}
+
+.about-detail p {
+    line-height: 25px;
+    margin: 15px 0;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.contact {
+    background: #91aab0;
+    position: absolute;
+    bottom: 55px;
+    right: 55px;
+    left: -30px;
+    padding: 15px;
+}
+
+.contact ul {
+    list-style: none;
+}
+.contact ul li {
+    margin: 5px 0;
+}
+.contact ul li a {
+    color: #212121;
+    text-decoration: none;
+}
+.contact ul li img {
+    width: 15px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+
+.menu {
+    list-style: none;
+    background-color: #c8c8c8;
+    border-radius: 5px 5px 0 0;
+}
+
+.menu li {
+    display: inline-block;
+    border-bottom: solid 3px transparent;
+    margin-right: -4px;
+}
+.menu li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 8px;
+    color: #212121;
+    font-weight: bold;
+}
+.menu li.active, .menu li:hover {
+    border-color: #7e969c;
+}
+.menu li span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    margin-left: 4px;
+}
+
+.menu li span.red {
+    background-color: #ff5f57;
+}
+.menu li span.yellow {
+    background-color: #febc2e;
+}
+.menu li span.green {
+    background-color: #28c841;
+}
+
+.menu li.option {
+    float: right;
+    margin-right: 15px;
+    margin-top: 3px;
+}
+
+.cv {
+    text-decoration: none;
+    background-color: #000000;
+    color: #91aab0;
+    padding: 10px;
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 1px solid #000000;
+}
+.cv:hover {
+    background-color: #ffffff;
+    border-top-color: #ffffff;
+    border-right-color: #ffffff;
+    border-left-color: #91aab0;
+    border-bottom-color: #91aab0;
+}
