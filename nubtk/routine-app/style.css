@@ -12,12 +12,9 @@
     --color1: #5c376a;
 }
 
-
-
 body {
     font-family: 'Open Sans', sans-serif;
     color: #575656;
-    height: 100vh;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
@@ -44,7 +41,8 @@ main {
     background: #f8f8f8;
 }
 
-.item .room {}
+.item .room {
+}
 
 .item .time {
     color: #27ae60;
@@ -57,13 +55,17 @@ main {
 }
 
 .item .designation {
-
+    color: #868686;
 }
 
 .item .course {
     margin-top: 8px;
     font-weight: 600;
     font-size: 12px;
+}
+
+.item.active {
+    background: #e1e7da;
 }
 
 nav {
