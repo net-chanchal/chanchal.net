@@ -1,7 +1,7 @@
 {
     "theme_color": "#5c376a",
     "background_color": "#5c376a",
-    "display": "fullscreen",
+    "display": "standalone",
     "scope": "/",
     "start_url": "./index.html",
     "name": "NUBTK Routine",
