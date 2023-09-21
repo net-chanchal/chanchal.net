@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d08ac36-1cff-4933-a006-9ae97b272b3f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nubtk/routine-app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/nubtk/routine-app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nubtk/routine-app/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/nubtk/routine-app/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nubtk/routine-app/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/nubtk/routine-app/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +55,7 @@
       <workItem from="1675342400907" duration="8730000" />
       <workItem from="1679584856864" duration="1812000" />
       <workItem from="1679719709046" duration="5000" />
-      <workItem from="1695292689755" duration="1538000" />
+      <workItem from="1695292689755" duration="1765000" />
     </task>
     <servers />
   </component>
