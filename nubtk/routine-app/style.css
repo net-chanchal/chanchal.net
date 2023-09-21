@@ -10,15 +10,20 @@
 
 :root {
     --color1: #5c376a;
+    --color2: #575656;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
-    color: #575656;
+    color: var(--color2);
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
     overflow: hidden;
+}
+
+.bg-light {
+    background: #fafafa;
 }
 
 p {
@@ -31,15 +36,15 @@ main {
     overflow-y: scroll;
 }
 
+.p-x {
+    padding: 15px;
+}
+
 .item {
     padding: 8px;
     background: #ffffff;
     border-bottom: solid 1px #dedede;
     cursor: default;
-}
-
-.item:hover {
-    background: #f8f8f8;
 }
 
 .item .room {
@@ -89,4 +94,188 @@ nav button {
 
 nav button:hover {
     background-color: #543361;
+}
+
+/* Filter */
+.page-title {
+    background-size: 28px;
+    background-repeat: no-repeat;
+    background-position: left;
+    filter: brightness(0.2);
+    text-indent: 30px;
+    font-weight: 500;
+}
+
+.form-group {
+    margin: 15px 0;
+}
+
+select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 8px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #ffffff;
+    font-weight: 400;
+    color: var(--color2)
+}
+
+/* The container */
+.checkbox-label {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 500;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    outline: none;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-label:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-label input:checked ~ .checkmark {
+    background-color: var(--color1);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-label input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-label .checkmark:after {
+    left: 7px;
+    top: 4px;
+    width: 4px;
+    height: 8px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.filter-button {
+    display: flex;
+}
+
+.filter-button button {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    color: var(--color2);
+}
+
+.filter-button button:hover {
+    opacity: 0.9;
+}
+
+.filter-button .reset {
+    margin-right: 15px;
+}
+
+.filter-button .find {
+    margin-left: 15px;
+    background: var(--color1);
+    color: #ffffff;
+}
+
+/* Settings */
+.user-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.user-data img {
+    width: 100px;
+    height: 100px;
+}
+
+.user-data h4 {
+    margin: 5px 0;
+}
+
+.user-data button {
+    border: none;
+    background: transparent;
+    position: relative;
+    top: 5px;
+}
+
+.setting-options {
+    margin-top: 25px;
+}
+
+.setting-btn {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    text-indent: 5px;
+    font-size: 16px;
+    padding: 15px 15px;
+    background: transparent;
+    border: none;
+    outline: none;
+    opacity: 0.8;
+}
+
+.setting-btn .arrow {
+    right: 10px;
+    position: absolute;
+}
+
+.setting-btn:hover {
+    background: #f1f1f1;
 }

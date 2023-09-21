@@ -3,7 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="9d08ac36-1cff-4933-a006-9ae97b272b3f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nubtk/routine-app/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/nubtk/routine-app/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nubtk/routine-app/filter.html" beforeDir="false" afterPath="$PROJECT_DIR$/nubtk/routine-app/filter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nubtk/routine-app/images/filter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nubtk/routine-app/images/gear.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nubtk/routine-app/images/home.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nubtk/routine-app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/nubtk/routine-app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nubtk/routine-app/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/nubtk/routine-app/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nubtk/routine-app/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/nubtk/routine-app/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +23,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2L8q3LB5mqUW1Js6Z9dGJ3Ztl4y" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -26,13 +34,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/nubtk/routine-app/images" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/nubtk/routine-app/images" />
       <recent name="$PROJECT_DIR$/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -56,7 +65,8 @@
       <workItem from="1675342400907" duration="8730000" />
       <workItem from="1679584856864" duration="1812000" />
       <workItem from="1679719709046" duration="5000" />
-      <workItem from="1695292689755" duration="2844000" />
+      <workItem from="1695292689755" duration="5905000" />
+      <workItem from="1695316149313" duration="3879000" />
     </task>
     <servers />
   </component>
