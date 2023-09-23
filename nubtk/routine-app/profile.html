@@ -13,8 +13,7 @@
 </head>
 <body class="bg-light">
 <main>
-    <div class="p-x">
-        <h3 class="page-title" style="background-image: url('images/settings.svg')">Settings</h3>
+    <div class="profile">
         <div class="user-data">
             <img src="images/user.png" width="128" height="128" alt="User">
             <h4>Md. Chanchal Biswas
@@ -27,36 +26,51 @@
         </div>
     </div>
 
-    <div class="setting-options">
-        <button class="setting-btn" onclick="window.location='notification.html'">
-            <img src="images/notification.svg" alt="">
-            Notification
-            <img src="images/arrow-right.svg" class="arrow" alt="">
-        </button>
+    <div class="p-x">
+        <div>
+            <div class="form-group">
+                <label for="">
+                    <input type="text" class="form-control" placeholder="Your Name" autofocus>
+                </label>
+            </div>
 
-        <button class="setting-btn"  onclick="window.location='help.html'">
-            <img src="images/info.svg" alt="">
-            Help
-            <img src="images/arrow-right.svg" class="arrow" alt="">
-        </button>
+            <div class="form-group">
+                <label for="">
+                    <input type="number" class="form-control" placeholder="Student ID">
+                </label>
+            </div>
 
-        <button class="setting-btn" onclick="window.location='network.html'">
-            <img src="images/wifi.svg" alt="">
-            Network Environment
-            <img src="images/arrow-right.svg" class="arrow" alt="">
-        </button>
+            <div class="form-group">
+                <label for="">
+                    <select name="" id="" class="form-control">
+                        <option value="">Choose Semester</option>
+                    </select>
+                </label>
+            </div>
 
-        <button class="setting-btn" onclick="window.location='developer.html'">
-            <img src="images/code.svg" alt="">
-            About Developer
-            <img src="images/arrow-right.svg" class="arrow" alt="">
-        </button>
+            <div class="form-group">
+                <label for="">
+                    <select name="" id="" class="form-control">
+                        <option value="">Choose Section</option>
+                    </select>
+                </label>
+            </div>
 
-        <button class="setting-btn" onclick="return confirm('Are you confirm to restart?')">
-            <img src="images/restart.svg" alt="">
-            Restart
-            <img src="images/arrow-right.svg" class="arrow" alt="">
-        </button>
+            <div class="form-group">
+                <label for="">
+                    <select name="" id="" class="form-control">
+                        <option value="">Choose Shift</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button class="save">Save</button>
+        </div>
+
+        <p><b>Note:</b> Changing semester,section and shift will change your routine.</p>
+
     </div>
 </main>
 <nav>

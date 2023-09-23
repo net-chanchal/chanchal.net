@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d08ac36-1cff-4933-a006-9ae97b272b3f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nubtk/routine-app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/nubtk/routine-app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nubtk/routine-app/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/nubtk/routine-app/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nubtk/routine-app/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/nubtk/routine-app/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nubtk/routine-app/settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/nubtk/routine-app/settings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nubtk/routine-app/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/nubtk/routine-app/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,17 +32,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/nubtk/routine-app/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/nubtk/routine-app/data" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/nubtk/routine-app/data" />
       <recent name="$PROJECT_DIR$/nubtk/routine-app/images" />
       <recent name="$PROJECT_DIR$/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/nubtk/routine-app" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/css" />
       <recent name="$PROJECT_DIR$/old" />
@@ -59,7 +66,11 @@
       <workItem from="1679584856864" duration="1812000" />
       <workItem from="1679719709046" duration="5000" />
       <workItem from="1695292689755" duration="5905000" />
-      <workItem from="1695316149313" duration="4200000" />
+      <workItem from="1695316149313" duration="6619000" />
+      <workItem from="1695390248111" duration="4526000" />
+      <workItem from="1695399561275" duration="7438000" />
+      <workItem from="1695443774377" duration="49000" />
+      <workItem from="1695451741686" duration="136000" />
     </task>
     <servers />
   </component>
