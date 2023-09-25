@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/static/js/main.1b653dce.js",
-    "static/js/787.60fe6ba2.chunk.js": "/static/js/787.60fe6ba2.chunk.js",
-    "index.html": "/index.html",
-    "main.1b653dce.js.map": "/static/js/main.1b653dce.js.map",
-    "787.60fe6ba2.chunk.js.map": "/static/js/787.60fe6ba2.chunk.js.map"
+    "main.js": "/nubtk/routine-app/build/static/js/main.1b653dce.js",
+    "static/js/787.60fe6ba2.chunk.js": "/nubtk/routine-app/build/static/js/787.60fe6ba2.chunk.js",
+    "index.html": "/nubtk/routine-app/build/index.html",
+    "main.1b653dce.js.map": "/nubtk/routine-app/build/static/js/main.1b653dce.js.map",
+    "787.60fe6ba2.chunk.js.map": "/nubtk/routine-app/build/static/js/787.60fe6ba2.chunk.js.map"
   },
   "entrypoints": [
     "static/js/main.1b653dce.js"
