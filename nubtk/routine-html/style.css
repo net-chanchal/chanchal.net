@@ -415,3 +415,48 @@ select::-ms-expand {
     display: block;
     margin: 5px 0;
 }
+
+/* Alert */
+.popup-window {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.67);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-window .dialog {
+    width: 90%;
+    background: #ffffff;
+    padding: 10px 15px;
+    box-shadow: 0 10px 15px #4c4c4c;
+}
+
+.popup-window .dialog .header h4 {
+    font-weight: 600;
+}
+
+.popup-window .dialog .body {
+    min-height: 60px;
+    margin: 10px 0;
+}
+
+.popup-window .dialog .footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.popup-window .dialog .footer button {
+    background: transparent;
+    outline: none;
+    color: var(--color1);
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 12px;
+}

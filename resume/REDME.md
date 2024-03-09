@@ -1,1 +1,0 @@
-https://www.etsy.com/listing/652283243/resume-template-resume-template-word

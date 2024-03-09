@@ -73,11 +73,14 @@ section {
 }
 
 .user {
-    border-radius: 40px 15px 40px;
+    border-radius: 50%;
     display: block;
     margin: 0 auto;
     border: double 3px var(--color-1);
     filter: grayscale(30%) brightness(120%);
+    width: 120px;
+    height: 120px;
+    padding: 2px;
 }
 
 .content .title {
@@ -252,6 +255,25 @@ section {
     height: 3px;
     border-radius: 50px;
     background-color: var(--color-1);
+}
+
+ul.theme-options {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+ul.theme-options li {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    border-radius: 50%;
+    border: solid 2px #e3e3e3;
+    cursor: pointer;
+}
+ul.theme-options li:hover {
+    border-style: dashed;
+    border-color: #ffffff;
 }
 
 /* Responsive */

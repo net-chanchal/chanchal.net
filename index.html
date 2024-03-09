@@ -50,16 +50,19 @@
             <div class="logo">
                 <h1><span>&lt;</span>CHANCHAL.<span>&gt;</span></h1>
             </div>
+            <ul class="theme-options">
+                <!-- For JS Response -->
+            </ul>
             <div class="content">
-                <img src="resume/user.jpg" class="user" width="120" height="120" alt="">
+                <img src="resume/user.jpg" class="user" alt="">
                 <h1 class="title">Chanchal <span>Biswas</span></h1>
                 <p class="subtitle">I'm a computer programmer. 8+ years of professional fullstack web development experience.</p>
                 <br>
                 <p class="services"><b>Services:</b> Web Design, Web Development, Problem Solving</p>
 
-                <a href="" class="download-cv">
+                <a href="resume/20240309-resume.pdf" class="download-cv" download="Chanchal's CV.pdf">
                     <svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960" width="22"><path d="M480-322 251-551l68-66 114 114v-323h94v323l114-114 68 66-229 229ZM229-135q-39.05 0-66.525-27.475Q135-189.95 135-229v-143h94v143h502v-143h95v143q0 39-27.769 66.5Q770.463-135 731-135H229Z"/></svg>
-                    DOWNLOAD CV
+                    DOWNLOAD RESUME
                 </a>
 
                 <div class="social">
@@ -109,27 +112,54 @@
 
     <script>
         const menuBar = document.querySelector('.menu-bar');
+        const themeOptions = document.querySelector('.theme-options');
+        const menuContent =  document.querySelector('.menu-content');
+        const colorList = ['#e65975', '#37715d', '#3498db', '#9b59b6', '#34495e'];
 
-        menuBar.addEventListener('click', function () {
-            const menu = document.querySelector('.menu-content');
-            menuBar.classList.toggle("change");
-
-            if (menu.classList.contains('menu-show')) {
-                menu.classList.remove('menu-show');
-            } else {
-                menu.classList.add('menu-show');
-            }
-        });
-
-
-        const setTheme = (theme) => {
-            const colors = ['#37715d', '#1abc9c', '#2ecc71', '#3498db', '#9b59b6', '#34495e', '#16a085', '#27ae60', '#2980b9',
-                '#8e44ad', '#2c3e50', '#f1c40f', '#e67e22', '#e74c3c', '#ecf0f1'];
-
-            document.documentElement.style.setProperty('--color-1', colors[theme]);
+        const setThemeColor = (color) => {
+            document.documentElement.style.setProperty('--color-1', color);
         }
 
-       // setTheme(0);
+        const saveThemeColor = (color = null) => {
+            if (color === null) {
+                return localStorage.getItem('themeColor');
+            }
+
+            localStorage.setItem('themeColor', color);
+            return null;
+        }
+
+        const themeOption = () => {
+            colorList.map(color => {
+                themeOptions.innerHTML += `<li style="background: ${color}"></li>`;
+            });
+
+            themeOptions.childNodes.forEach(element => {
+                element.addEventListener('click', function(e) {
+                    const color = e.target.style.background;
+                    setThemeColor(color);
+                    saveThemeColor(color);
+                });
+            });
+
+            const color = saveThemeColor();
+            setThemeColor(color);
+        }
+
+        const menuToggle = () => {
+            menuBar.addEventListener('click', function () {
+                menuBar.classList.toggle("change");
+
+                if (menuContent.classList.contains('menu-show')) {
+                    menuContent.classList.remove('menu-show');
+                } else {
+                    menuContent.classList.add('menu-show');
+                }
+            });
+        }
+
+        themeOption();
+        menuToggle();
     </script>
 </body>
 </html>

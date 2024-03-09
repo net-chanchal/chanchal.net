@@ -8,32 +8,40 @@
     <title>Resume</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600&display=swap');
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
-            background: #cac5c2;
+            /*background: #cac5c2;*/
             font-family: 'Montserrat', sans-serif;
             font-weight: 400;
         }
+
         a {
             text-decoration: none;
-            font-weight:bold
+            font-weight: bold
         }
+
         .container {
             width: 960px;
             margin: 0 auto;
             position: relative;
+            display: flex;
         }
+
+        .left-content, .right-content {
+            padding-bottom: 45px;
+        }
+
         .main {
             margin-left: 25px;
             margin-right: 25px;
         }
-        .left-content, .right-content {
-            height: 1900px
-        }
+
         .left-content {
             width: 300px;
             background: #222224;
@@ -47,11 +55,12 @@
         }
 
         .user, .heading {
-            background: #eaeaec;
+            background: #dfe6e7;
             margin-top: 80px;
             height: 100px;
             position: relative;
         }
+
         .user img {
             width: 130px;
             height: 130px;
@@ -69,27 +78,32 @@
             letter-spacing: 2px;
             font-weight: 400;
         }
+
         .designation {
             position: relative;
-            top: 20px;
+            top: 22px;
             font-size: 14px;
         }
+
         .content-body {
             margin-top: 20px;
             overflow: hidden;
         }
+
         .content-box {
             margin-top: 20px;
         }
-        .content-box  h3 {
+
+        .content-box h3 {
             border-bottom: solid 1px #e3e3e3;
             padding-bottom: 10px;
-            font-weight: 400;
+            font-weight: 500;
             font-size: 16px;
         }
-        .content-box  p {
-            margin-top: 15px;
-            font-size: 14px;
+
+        .content-box p {
+            margin-top: 10px;
+            font-size: 13px;
             line-height: 24px;
         }
 
@@ -101,6 +115,7 @@
         .content-box ol {
             margin-left: 15px;
         }
+
         .content-box ol li {
             font-size: 13px;
             margin: 5px 0;
@@ -120,6 +135,7 @@
             text-align: left;
             font-size: 12px;
         }
+
         .light p a {
             color: #008000;
         }
@@ -131,235 +147,503 @@
         .project {
             margin-top: 15px;
         }
+
         .project p {
-            margin-top: 0;
+            margin-top: 5px;
         }
+
         .project .title {
             font-size: 13px;
             font-weight: 600;
             display: block;
         }
+
         .project .company {
             margin: 0;
             line-height: 15px;
         }
+
         .project .company a {
             color: #008000;
             font-weight: 300;
         }
+
         .project .company span {
             font-size: 12px;
         }
+
+        .project .company b {
+            font-size: 10px;
+            color: #6f6f6f;
+        }
+
         .project .lang {
             font-size: 11px;
             font-weight: 400;
             margin: 0;
             color: #979797;
         }
+
+        .top-feature {
+            margin-left: 25px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .top-feature li {
+            margin: 5px 0;
+            font-size: 12px;
+            color: #919191;
+        }
+
+        .top-feature li ul {
+            margin-left: 15px;
+        }
+
+        .top-feature li ul li {
+            font-size: 11px;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="left-content">
-            <div class="user">
-                <img src="user.jpg" alt="User">
-            </div>
+<div class="container">
+    <div class="left-content">
+        <div class="user">
+            <img src="user.jpg" alt="User">
+        </div>
 
-            <div class="content-body">
-                <div class="main">
-                    <div class="content-box light">
-                        <h3>SKILLS</h3>
-                        <h5>Language</h5>
-                        <ol>
-                            <li>PHP <code>[OOP & MVC]</code></li>
-                            <li>Javascript</li>
-                            <li>SQL</li>
-                            <li>C++</li>
-                            <li>Java</li>
-                        </ol>
-                        <h5>Framework & Library</h5>
-                        <ol>
-                            <li>CodeIgniter</li>
-                            <li>Laravel</li>
-                            <li>jQuery</li>
-                        </ol>
+        <div class="content-body">
+            <div class="main">
+                <div class="content-box light">
+                    <h3>SKILLS</h3>
+                    <h5>Programming Language</h5>
+                    <ol>
+                        <li>PHP</li>
+                        <li>Javascript</li>
+                        <li>SQL and PL SQL</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                    </ol>
 
-                        <h5>Database</h5>
-                        <ol>
-                            <li>MySQL</li>
-                            <li>SQLite</li>
-                        </ol>
-                        <h5>Design</h5>
-                        <ol>
-                            <li>HTML 5</li>
-                            <li>CSS</li>
-                            <li>Bootstrap</li>
-                        </ol>
-                        <h5>Software</h5>
-                        <ol>
-                            <li>PhpStorm</li>
-                            <li>Sublime Text 4</li>
-                            <li>Visual Studio Code</li>
-                            <li>Visual Studio</li>
-                            <li>Eclips</li>
-                        </ol>
-                        <h5>OS</h5>
-                        <ol>
-                            <li>macOS</li>
-                            <li>Windows</li>
-                        </ol>
-                        <h5>Testing & DevOps</h5>
-                        <ol>
-                            <li>Unit Testing</li>
-                            <li>Github</li>
-                        </ol>
+                    <h5>Database Management System</h5>
+                    <ol>
+                        <li>MySQL</li>
+                        <li>Oracle</li>
+                        <li>SQLite</li>
+                        <li>PostgreSQL</li>
+                    </ol>
 
-                        <br>
-                        <h3>Education</h3>
-                        <h5>SSC (Science) - 2013-2014</h5>
-                        <p>Nagarkandi SP Secondary School, Bagerhat</p>
+                    <h5>Frameworks & Libraries</h5>
+                    <ol>
+                        <li>Laravel</li>
+                        <li>CodeIgniter</li>
+                        <li>ReactJS</li>
+                        <li>jQuery</li>
+                    </ol>
 
-                        <h5>Diploma (CSE) - 2016-2021</h5>
-                        <p>Jashore Polytechnic Institute, Jashore</p>
+                    <h5>Design</h5>
+                    <ol>
+                        <li>HTML 5</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                    </ol>
 
-                        <h5>Graduation (CSE) - 2021- Running</h5>
-                        <p>Northern University of Business and Technology, Khulna</p>
+                    <h5>Testing & DevOps</h5>
+                    <ol>
+                        <li>Unit Testing</li>
+                        <li>Git and GitHub</li>
+                        <li>Docker</li>
+                    </ol>
 
-                        <br>
-                        <h3>CONTACT</h3>
-                        <h5>Address</h5>
-                        <p>Road No #07, Nirala R/A, Khulna 9100, BD</p>
+                    <h5>Web Servers</h5>
+                    <ol>
+                        <li>Apache</li>
+                    </ol>
 
-                        <h5>Phone</h5>
-                        <p>+880 1707093920</p>
+                    <h5>OS</h5>
+                    <ol>
+                        <li>macOS</li>
+                        <li>Windows</li>
+                    </ol>
 
-                        <h5>Email Address</h5>
-                        <p>mchanchalbd@gmail.com</p>
+                    <h5>Other Tools</h5>
+                    <ol>
+                        <li>PhpStorm</li>
+                        <li>Sublime Text</li>
+                        <li>Visual Studio Code</li>
+                        <li>Visual Studio</li>
+                        <li>Android Studio</li>
+                    </ol>
 
-                        <h5>Github</h5>
-                        <p>Username: <a href="https://github.com/net-chanchal" target="_blank">net-chanchal</a></p>
+                    <br>
+                    <h3>Education</h3>
+                    <h5>SSC (Science) | 2013-2014</h5>
+                    <p>Nagarkandi SP Secondary School, Bagerhat</p>
 
-                        <h5>Linkedin</h5>
-                        <p>Username: <a href="https://www.linkedin.com/in/net-chanchal/" target="_blank">net-chanchal</a></p>
+                    <h5>HSC (Science) | 2014-2016</h5>
+                    <p>Chandpur College, Rupsa, Khulna</p>
 
-                        <h5>Website</h5>
-                       <p><a href="https://chanchal.net" target="_blank">www.chanchal.net</a></p>
-                    </div>
+                    <h5>Diploma (CSE) | 2016-2021</h5>
+                    <p>Jashore Polytechnic Institute, Jashore</p>
+
+                    <h5>Graduation (CSE) | 2021-Running</h5>
+                    <p>Northern University of Business and Technology, Khulna</p>
+
+                    <br>
+                    <h3>CONTACT</h3>
+                    <h5>Address</h5>
+                    <p>SR Place, Road No #07, Nirala R/A<br> Khulna 9100, BD</p>
+
+                    <h5>Phone</h5>
+                    <p>+880 1707093920</p>
+
+                    <h5>Email Address</h5>
+                    <p>mchanchalbd@gmail.com</p>
+
+                    <h5>Github</h5>
+                    <p>Username: <a href="https://github.com/net-chanchal" target="_blank">net-chanchal</a></p>
+
+                    <h5>Linkedin</h5>
+                    <p>Username: <a href="https://www.linkedin.com/in/net-chanchal/" target="_blank">net-chanchal</a>
+                    </p>
+
+                    <h5>Website</h5>
+                    <p>Website URL: <a href="https://chanchal.net" target="_blank">chanchal.net</a></p>
                 </div>
             </div>
         </div>
-        <div class="right-content">
-            <div class="heading">
-                <div class="main">
-                    <h2 class="name">MD CHANCHAL BISWAS</h2>
-                    <P class="designation">Web Developer</P>
-                </div>
+    </div>
+    <div class="right-content">
+        <div class="heading">
+            <div class="main">
+                <h2 class="name">MD CHANCHAL BISWAS</h2>
+                <P class="designation">Web Developer</P>
             </div>
+        </div>
 
-            <div class="content-body">
-                <div class="main">
-                    <div class="content-box dark">
-                        <h3>PROFILE</h3>
+        <div class="content-body">
+            <div class="main">
+                <div class="content-box dark">
+                    <h3>PROFILE</h3>
+                    <p>
+                        I'm Chanchal, a web developer with ten years of professional experience in web programming. I
+                        have hands-on experience in developing various web applications, desktop applications and
+                        android applications.
+                    </p>
+                    <p>
+                        Throughout my career, I have been dedicated to delivering high-quality web solutions, leveraging
+                        my skills in backend development, database design, and server-side scripting.
+                    </p>
+                </div>
+
+                <div class="content-box dark">
+                    <h3>WORK EXPERIENCE</h3>
+                    <p>
+                        Displayed here are some of the projects I've personally completed, some of the main features of each project are included here.
+                    </p>
+                    <div class="project">
+                        <p class="title">Digital Marketing Agency</p>
+                        <p class="company"><a href="https://ddmg.io" target="_blank">ddmg.io</a> |
+                            <span>Jan 2024 - Running</span> |
+                            <b>California, USA</b>
+                        </p>
+                        <p class="lang">PHP (Laravel v10.x), MySQL (v8.2), React(v18.2)</p>
                         <p>
-                            I'm Chanchal Biswas. I'm web developer. Computer programming is my passion. So far I have eight years of experience in professional web programming.
-                            I always use time complexity, memory complexity, algorithm simplification, security and coding style very seriously in each of my web applications.
+                            This is a digital agency marketing website. Used Laravel for backend and React for frontend.
+                        </p>
+                        <ul class="top-feature">
+                            <li>Dynamic Page Builder (for react app)</li>
+                            <li>Powerful Media Gallery</li>
+                            <li>Dynamic Menu</li>
+                            <li>More than features...</li>
+                        </ul>
+                    </div>
+
+                    <div class="project">
+                        <p class="title">Custom Inventory Management System</p>
+                        <p class="company"><a href="https://kundutraders.com" target="_blank">kundutraders.com</a> |
+                            <span>Jan 2024</span>
+                            |
+                            <b>Bangladesh</b>
+                        </p>
+                        <p class="lang">PHP (Laravel v9.x), MySQL, MySQL Stored Procedure</p>
+                        <p>It is a custom inventory management system developed based on specific requirements.
+                            MySQL stored procedure is used to develop this software.</p>
+                        <ul class="top-feature">
+                            <li>Product (Product Name, Lot Number, Weight and Status)</li>
+                            <li>Destinations (Address, Import/Export, Product Weight, Cost)</li>
+                            <li>Expense Categories (Tax, Transport, Labor and can be add category)</li>
+                            <li>Product Purchase (Owned Product and Commission Product)
+                                <ul>
+                                    <li>Add Supplier Info</li>
+                                    <li>Choose Product (From Product List)</li>
+                                    <li>Quantity, Purchase Unit Cost</li>
+                                    <li>Destination (from exist destination list), Laborer Expense (dependent from
+                                        destination)
+                                    </li>
+                                    <li>Purchase Costs (automatic calculated), Sales Price</li>
+                                    <li>Other Expense (Tax, Transport, Labor, etc) Optional</li>
+                                </ul>
+                            </li>
+                            <li>Different functionality for commission product purchases</li>
+                            <li>Stock (Zero stock, Owned Product Stock, Commission Product Stock)</li>
+                            <li>Stock Adjustment (Adjustment by other stock products)</li>
+                            <li>Stock Report</li>
+                            <li>Sales
+                                <ul>
+                                    <li>Add Customer Info or exist customer</li>
+                                    <li>Product Choose</li>
+                                    <li>Weight adjustment (+/-)</li>
+                                    <li>Quantity</li>
+                                    <li>Unit Cost (automatic fill up but changeable)</li>
+                                    <li>Destination (from exist destination list), Laborer Expense (dependent from
+                                        destination)
+                                    </li>
+                                    <li>Draft</li>
+                                </ul>
+                            </li>
+                            <li>Account
+                                <ul>
+                                    <li>Opening Balance (Bank and Cache)</li>
+                                    <li>Receives (Customer, Sales)</li>
+                                    <li>Payment (Supplier Payment, Commission, Sale Due, Bank Received, Other Payment)
+                                    </li>
+                                    <li>Laborer Payment</li>
+                                    <li>Cache Deposit</li>
+                                </ul>
+                            </li>
+                            <li>Customer Management</li>
+                            <li>Supplier Management</li>
+                            <li>Laborer Management</li>
+                            <li>3 Types of User Roles
+                                <ul>
+                                    <li>Admin</li>
+                                    <li>Seller</li>
+                                    <li>Accountant</li>
+                                </ul>
+                            </li>
+                            <li>Statistic and Report Generate</li>
+                        </ul>
+                    </div>
+
+                    <div class="project">
+                        <p class="title">University Routine Management System And App</p>
+                        <p class="company">
+                            <span>Feb 2022</span>
+                        </p>
+                        <p class="lang">C++(Windows Platform), Java(Android Platform), MySQL, PHP(API
+                            Development)</p>
+                        <p>It was the University's routine management system and was done separately for Windows and
+                            Android platforms.</p>
+
+                        <ul class="top-feature">
+                            <li>Routine created by semester, section, teacher, course and etc</li>
+                            <li>Difference routine for student and teacher</li>
+                            <li>Android App
+                                <ul>
+                                    <li>Two type account (Student, Teacher)</li>
+                                    <li>Display automatic daily class routine</li>
+                                    <li>Powerful filtering</li>
+                                    <li>Online and Offline Version</li>
+                                    <li>Automatic update</li>
+                                    <li>Chat system in between student and teacher</li>
+                                    <li>Notification before class start</li>
+                                    <li>and etc</li>
+                                </ul>
+                            </li>
+                            <li>Desktop App</li>
+                            <li>Web App</li>
+                        </ul>
+                    </div>
+
+                    <div class="project">
+                        <p class="title">Nonprofit Organization</p>
+                        <p class="company"><a href="https://aaronbarnettfoundation.org" target="_blank">aaronbarnettfoundation.org</a>
+                            | <span>2020-2022</span>
+                            | <b>California, US</b>
+                        </p>
+                        <p class="lang">PHP (CodeIgniter), MySQL, Javascript</p>
+                        <p>ABF foundation is a nonprofit organization website.</p>
+                        <ul class="top-feature">
+                            <li>Website Maintains</li>
+                            <li>Donation (Bank, PayPal)</li>
+                            <li>Mentors Profile</li>
+                            <li>Memberships Profile
+                                <ul>
+                                    <li>Board Member</li>
+                                    <li>Student Ambassador</li>
+                                    <li>Committee Member</li>
+                                </ul>
+                            </li>
+                            <li>Student Application (For Scholarship)
+                                <ul>
+                                    <li>Online application functionality</li>
+                                    <li>Apply by country, district and school</li>
+                                </ul>
+                            </li>
+                            <li>Scholarship Application Reviewing Committee
+                                <ul>
+                                    <li>Member grouping by counties (difference committee an every new year)</li>
+                                    <li>Review and Marking</li>
+                                </ul>
+                            </li>
+                            <li>Rubric System</li>
+                            <li>Result Publish</li>
+                            <li>Student Profile (Article, etc)</li>
+                            <li>More than features...</li>
+                        </ul>
+                    </div>
+
+                    <div class="project">
+                        <p class="title">E-Commerce</p>
+                        <p class="company"><a href="https://pryme.com" target="_blank">pryme.com</a> |
+                            <span>2020-2022</span>
+                            | <b>California, US</b>
+                        </p>
+                        <p class="lang"> PHP (CodeIgniter), MySQL, Javascript</p>
+                        <p>
+                            For almost 30 years, PRYME has been a leading manufacturer of high quality products for professional users of
+                            two-way radios. Located in Brea, CA, line of accessories serves many markets including
+                            public safety, police, fire, emergency services, healthcare, security, oil & gas, tactical
+                            and hazmat professionals, as well as industrial, commercial, hospitality and entertainment
+                            markets.
+                        </p>
+
+                        <ul class="top-feature">
+                            <li>Vendor Type (Consumer, Dealer/Reseller, Commercial End-User, Government Agency)</li>
+                            <li>Shipping (International and Domestic), UPS, USPS</li>
+                            <li>Tax (dynamic tax calculation by country, city and state)</li>
+                            <li>Coupon (Percentage, Fixed and Free Shipping)</li>
+                            <li>Payment Gateway (PayPal, Authorize.net)</li>
+                            <li>Shipping and Billing (Can save multiple shipping and billing information in address
+                                book)
+                            </li>
+                            <li>Product (Product add by Product Series, Manufacturer, Category, Target Market)</li>
+                            <li>Product Package (multiple items included in a single product)</li>
+                            <li>Product price management by vendor type</li>
+                            <li>Dealers (6 types of dealers and product discounts are changeable for different levels)
+                            </li>
+                            <li>Customer Order Management</li>
+                            <li>Customer Tracking</li>
+                            <li>Order Tracking</li>
+                            <li>Product Reviewing Statistics</li>
+                            <li>Strong SEO functionality</li>
+                            <li>RMA and etc</li>
+                        </ul>
+                    </div>
+
+                    <div class="project">
+                        <p class="title">Store/Vendor Locator</p>
+                        <p class="company"><a href="https://vendorlocator.7eye.com" target="_blank">vendorlocator.7eye.com</a>
+                            | <a href="https://vendorlocator.zienaeyewear.com" target="_blank">vendorlocator.zienaeyewear.com</a>
+                            | <span>Jun 2021</span>
+                            | <b>California, US</b>
+                        </p>
+                        <p class="lang">CodeIgnite, MySQL, Javascript</p>
+                        <p>It's an e-commerce website. This ecommerce developed by <u>Magento</u>.
+                            Store locator is a new part of this website. It will help to find all the stores of the
+                            company.
+                        </p>
+
+                        <ul class="top-feature">
+                            <li>Country, City and State Insert</li>
+                            <li>Store (Insert, Import and Export, Draft)</li>
+                            <li>Store Find (International and Domestic)</li>
+                            <li>Google Map API
+                                <ul>
+                                    <li>Maps Javascript API</li>
+                                    <li>Distance Matrix API</li>
+                                    <li>Geocoding API</li>
+                                    <li>Places API</li>
+                                </ul>
+                            </li>
+                            <li>This system is developed by CodeIgniter.
+                                But JavaScript is used for single page application behavior.
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="project">
+                        <p class="title">College Website & Result Management System</p>
+                        <p class="company"><a href="https://govtmuhsincollege.edu.bd" target="_blank">govtmuhsincollege.edu.bd</a>
+                            | <span>Jan 2019</span>
+                            | <b>Bangladesh</b>
+                        </p>
+                        <p class="lang">PHP (v7.4), MySQL, Javascript</p>
+                        <p>This website and result management system developed for Govt Hazi Muhammad Muhsin College,
+                            Khulna.</p>
+                        <ul class="top-feature">
+                            <li>HSC Result Management</li>
+                            <li>Result Publish (Mobile SMS, Website)</li>
+                            <li>Statistics of Result</li>
+                            <li>Teacher Maintains</li>
+                            <li>SMS Notifications (Teacher, Staff, Academic Council, Special Person)</li>
+                            <li>Notice Board</li>
+                            <li>Website Control</li>
+                        </ul>
+                    </div>
+
+                    <div class="project">
+                        <p class="title">Property Management System</p>
+                        <p class="company">
+                            <a href="https://lpmukltd.com" target="_blank">lpmukltd.com</a> |
+                            <span>Apr 2018</span>
+                            | <b>London, UK</b>
+                        </p>
+                        <p class="lang">PHP (v7.2), MySQL, Javascript</p>
+                        <p>It is a property management system through which they manage all their properties.
+                            This system is specific to UK property rules.</p>
+                        <ul class="top-feature">
+                            <li>Tenant (add, edit and delete)</li>
+                            <li>Rent Due List (Filter duel list like monthly,weekly, day)</li>
+                            <li>Expiry List of Tenant (Extend duration or move out)</li>
+                            <li>Previous Tenant (Can a new tenant)</li>
+                            <li>Property List (Need for tenant)</li>
+                            <li>Statistic and Report</li>
+                            <li>Recovery Deleted Tenant</li>
+                            <li>Export and Backup Database</li>
+                        </ul>
+                    </div>
+
+                    <div class="project">
+                        <p class="title">Other Applications</p>
+                        <p class="company" style="line-height: 20px">
+                            <span style="width: 120px; display: inline-block">Blog</span><a
+                                href="https://thinkschool.org" target="_blank">thinkschool.org</a><br>
+                            <span style="width: 120px; display: inline-block">Association</span><a
+                                href="https://kdabny.org" target="_blank">kdabny.org</a><br>
+                            <span style="width: 120px; display: inline-block">Online Quiz Game</span><a
+                                href="https://mquizex.com" target="_blank">mquizex.com</a><br>
+                            <span style="width: 120px; display: inline-block">Digital Agency</span><a
+                                href="https://webbang.co.uk" target="_blank">webbang.co.uk</a><br>
+                            <span style="width: 120px; display: inline-block">and more...</span>
                         </p>
                     </div>
 
-                    <div class="content-box dark">
-                        <h3>WORK EXPERIENCE</h3>
-                        <p>I've finished lots of projects as a freelancer.  Some of them are mentioned below.</p>
-
-                        <div class="project">
-                            <p class="title">Inventory Management System</p>
-                            <p class="company"><a href="https://kundutraders.com" target="_blank">kundutraders.com</a> | <span>2023</span></p>
-                            <p class="lang">PHP (Laravel v9.x), MySQL Stored Procedure</p>
-                            <p>This system has been developed specifically as per the requirements of the company. They have a lot of data.</p>
-                        </div>
-
-                        <div class="project">
-                            <p class="title">OpenAI Messenger</p>
-                            <p class="company"><a href="https://ai.kundutraders.com" target="_blank">ai.kundutraders.com</a> | <span>2023</span></p>
-                            <p class="lang">PHP (OOP), SQLite, Javascript, OpenAI API</p>
-                            <p>It has created a messenger for chatting that is used by the OpenAI API.</p>
-                        </div>
-
-                        <div class="project">
-                            <p class="title">University Management System</p>
-                            <p class="company"><span>2023</span></p>
-                            <p class="lang">PHP (Laravel v9.x), MySQL Stored Procedure</p>
-                            <p>It is a complete university management system still in its work in progress.</p>
-                        </div>
-
-                        <div class="project">
-                            <p class="title">University Routine Management System</p>
-                            <p class="company"><span>2022</span></p>
-                            <p class="lang">C++ (For Windows Platform), Java (For Android Platform), MySQL, PHP (for API Development)</p>
-                            <p>It was the University's routine management system and was done separately for Windows and Android platforms. It was a personal test project.</p>
-                        </div>
-
-                        <div class="project">
-                            <p class="title">Foundation</p>
-                            <p class="company"><a href="https://aaronbarnettfoundation.org" target="_blank">aaronbarnettfoundation.org</a> | <span>2020-2022</span></p>
-                            <p class="lang">PHP (CodeIgniter), MySQL, Javascript</p>
-                            <p>This is a foundation's website. It is very big and has a lot to do. It has been developed for a long time. (Rubric System, Board Member, Scholarship and etc)</p>
-                        </div>
-
-                        <div class="project">
-                            <p class="title">E-Commerce</p>
-                            <p class="company"><a href="https://pryme.com" target="_blank">pryme.org</a> | <span>2020-2022</span></p>
-                            <p class="lang"> PHP (CodeIgniter), MySQL, Javascript</p>
-                            <p> It was a large ecommerce system. I worked for more than two years. Included (Multi Vendors, Dealers, Retailers, Shipping (UPS, USPS), Multiple Payment Gateway, RMA, Product Series and etc.</p>
-                        </div>
-
-                        <div class="project">
-                            <p class="title">Store Locator</p>
-                            <p class="company"><a href="https://vendorlocator.7eye.com" target="_blank">vendorlocator.7eye.com</a> | <a href="https://vendorlocator.zienaeyewear.com" target="_blank">vendorlocator.zienaeyewear.com</a> | <span>2022</span></p>
-                            <p class="lang">CodeIgnite, MySQL, Javascript (Javascript was use for work like React JS)</p>
-                            <p>It was originally developed using the Google API to find all of the company's stores.</p>
-                        </div>
-
-                        <div class="project">
-                            <p class="title">Blog</p>
-                            <p class="company"><a href="https://thinkschool.org" target="_blank">thinkschool.org</a> | <span>2021</span></p>
-                            <p class="lang">PHP (CodeIgniter), MySQL</p>
-                            <p>This is a largest informative website. A large portion of YouTube videos is linked to it.</p>
-                        </div>
-
-                        <div class="project">
-                            <p class="title">Result Management System</p>
-                            <p class="company"><a href="https://govtmuhsincollege.edu.bd" target="_blank">govtmuhsincollege.edu.bd</a> | <span>2019</span></p>
-                            <p class="lang">PHP, MySQL, Javascript</p>
-                            <p>It was developed for a college's results management and it included a website.</p>
-                        </div>
-
-                        <div class="project">
-                            <p class="title">Property Management System</p>
-                            <p class="company"><a href="https://lpmukltd.com" target="_blank">lpmukltd.com</a> | <span>20218</span></p>
-                            <p class="lang">PHP, MySQL, Javascript</p>
-                            <p>A company had a property management system through which they manage all their properties.</p>
-                        </div>
-
-                        <div class="project">
-                            <p class="title">Digital Agency</p>
-                            <p class="company"><a href="https://webbang.co.uk" target="_blank">webbang.co.uk</a> | <span>2018</span></p>
-                            <p class="lang">PHP (CodeIgniter), MySQL</p>
-                            <p>It's a digital agency website. This website provide Domain, Hosting, Website Design and Development.</p>
-                        </div>
-
-                        <div class="project">
-                            <p class="title">API Used Skill</p>
-                            <ol>
-                                <li>Google Map API (Distance Matrix API, Maps Javascript API, Geocoding API, Places API)</li>
-                                <li>MapBox API</li>
-                                <li>Payment Gateway: Authorize.net, PayPal,  Stripe</li>
-                                <li>OpenAI</li>
-                            </ol>
-                        </div>
+                    <div class="project">
+                        <p class="title">Other Skills</p>
+                        <ol>
+                            <li>RESTful API Development</li>
+                            <li>Google API, Facebook Graph API</li>
+                            <li>MapBox API</li>
+                            <li>Payment Gateway: Authorize.net, PayPal, Stripe</li>
+                            <li>OpenAI API</li>
+                            <li>QuickBook API</li>
+                            <li>WordPress, Magento, Shopify (not professionally)</li>
+                            <li>Industrial Trainer (4 years)
+                                <ul class="top-feature">
+                                    <li>HTech ICT Ltd. (htechictltd.com)</li>
+                                    <li>Swift IT (swiftit.org)</li>
+                                    <li>ICT Care (ictcare.com.bd)</li>
+                                </ul>
+                            </li>
+                        </ol>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </body>
 </html>
