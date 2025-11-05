@@ -5,13 +5,14 @@
 }
 
 :root {
-    --color-1: #e65975;
+    --color-1: white;
 
 }
 
 body {
     font-family: 'Lexend Deca', sans-serif;
     color: #2a2a2a;
+    background-color: #1b1b1b;
 }
 
 a {
@@ -30,19 +31,20 @@ section {
 }
 
 .left-side {
-    width: 50%;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     padding: 30px;
     position: relative;
-}
-.right-side {
-    width: 50%;
-    height: 100vh;
-    background-color: var(--color-1);
-    padding: 30px;
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    z-index: 999;
+}
+
+.logo {
+    color: #ffffff;
 }
 
 .logo span {
@@ -61,22 +63,10 @@ section {
     cursor: default;
 }
 
-.content {
-    display: flex;
-    height: 100%;
-    width: 80%;
-    align-items: start;
-    justify-content: center;
-    flex-direction: column;
-    margin: -35px auto 0 auto;
-    position: relative;
-}
-
 .user {
     border-radius: 50%;
     display: block;
     margin: 0 auto;
-    border: double 3px var(--color-1);
     filter: grayscale(30%) brightness(120%);
     width: 120px;
     height: 120px;
@@ -85,6 +75,7 @@ section {
 
 .content .title {
     font-size: 3.5em;
+    color: rgb(255, 255, 255)
 }
 
 .content .title span {
@@ -93,21 +84,39 @@ section {
 
 .content .subtitle {
     margin-top: 15px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     line-height: 30px;
+    color: rgb(175, 175, 175)
+}
+
+.contact-info {
+    margin-top: 30px;
+    font-size: 14px;
+    color: rgb(175, 175, 175);
+    line-height: 24px;
+    font-weight: 300;
 }
 
 .content .services {
-    color: #979797;
+    color: rgb(175, 175, 175);
     font-weight: 300;
 }
 
-.content .download-cv {
-    display: inline-block;
+.content .download-link {
     margin-top: 70px;
+}
+
+.content .download-cv {
     color: var(--color-1);
     font-weight: 500;
+    background: #313131;
+    padding: 15px 35px;
+    border-radius: 50px;
+    transition: 500ms;
+}
+.content .download-cv:hover {
+    background: #414141;
 }
 
 .content .download-cv svg {
@@ -117,20 +126,29 @@ section {
 }
 
 .social {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin-top: 40px;
 }
 
 .social a {
     opacity: 0.8;
+    background-color: #313131;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 300ms;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    transition: 500ms;
 }
 
 .social a:hover {
-    opacity: 1.0;
+    background: #414141;
 }
 
 .all-language {
@@ -304,10 +322,6 @@ ul.theme-options li:hover {
         font-size: 2.2em;
     }
 
-    .content .subtitle {
-        font-size: 18px;
-    }
-
     .hero-right {
         top: 10%;
         left: -70%;
@@ -334,14 +348,5 @@ ul.theme-options li:hover {
 
     .bar1, .bar2, .bar3 {
         background: #2a2a2a;
-    }
-
-    .social {
-        position: absolute;
-        bottom: 50px;
-        left: 0;
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
     }
 }
