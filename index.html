@@ -20,7 +20,8 @@
 <body class="home">
     <section>
         <div class="left-side">
-            <div class="dotted">
+          <div>
+              <div class="dotted">
                 <div class="line">
                     <div></div>
                     <div></div>
@@ -47,25 +48,32 @@
                 </div>
 
             </div>
-            <div class="logo">
-                <h1><span>&lt;</span>CHANCHAL.<span>&gt;</span></h1>
-            </div>
+
             <ul class="theme-options">
                 <!-- For JS Response -->
             </ul>
             <div class="content">
-                <img src="resume/user.jpg" class="user" alt="">
+                <img src="img/chanchal_biswas.jpeg" class="user" alt="">
                 <h1 class="title">Chanchal <span>Biswas</span></h1>
-                <p class="subtitle">I'm a computer programmer. 8+ years of professional fullstack web development experience.</p>
-                <br>
-                <p class="services"><b>Services:</b> Web Design, Web Development, Problem Solving</p>
+                <p class="subtitle">
+I am a Senior Software Engineer with over 10 years of hands-on experience building web applications and real-time systems. I specialize in Laravel/PHP, Node.js, C++, PostgreSQL, and cloud-based infrastructure (AWS). I have led projects from initial planning to deployment, creating high-performance systems that handle millions of transactions daily. I also have experience with real-time communication (WebRTC, Socket.io), AI-supported solutions, and enterprise-grade backend development.
+                </p>
 
-                <a href="resume/20240309-resume.pdf" class="download-cv" download="Chanchal's Resume.pdf">
+                <div class="download-link">
+                    <a href="resume/20240309-resume.pdf" class="download-cv" download="Chanchal's Resume.pdf">
                     <svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960" width="22"><path d="M480-322 251-551l68-66 114 114v-323h94v323l114-114 68 66-229 229ZM229-135q-39.05 0-66.525-27.475Q135-189.95 135-229v-143h94v143h502v-143h95v143q0 39-27.769 66.5Q770.463-135 731-135H229Z"/></svg>
                     DOWNLOAD RESUME
                 </a>
+                </div>
 
-                <div class="social">
+                <div class="contact-info">
+                    Road No #07, Nirala R/A, Khulna 9100, BD<br>
+                    +880 1715-777622<br>
+                    me@chanchal.net
+                </div>
+            </div>
+          </div>
+                            <div class="social">
                     <a href="https://github.com/net-chanchal" target="_blank" title="Github"><img src="img/github.svg" width="25" height="25" alt="img/github.svg"></a>
                     <a href="https://www.linkedin.com/in/net-chanchal" title="Linkedin" target="_blank"><img src="img/linkedin.svg" width="25" height="25" alt="img/linkedin.svg"></a>
                     <a href="https://www.youtube.com/@net.chanchal" title="Youtube" target="_blank"><img src="img/youtube.svg" width="25" height="25" alt="img/youtube.svg"></a>
@@ -73,30 +81,6 @@
                     <a href="#" title="Stack Overflow"><img src="img/stack-overflow.svg" width="25" height="25" alt="img/stack-overflow.svg"></a>
 
                 </div>
-            </div>
-        </div>
-        <div class="right-side">
-            <img src="img/language.png" alt="Programming Language" class="all-language">
-
-            <div class="menu">
-                <div class="menu-bar">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-
-                <div class="menu-content">
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Case Study</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-
-                    <h1 class="hero-menu">MENU</h1>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -109,57 +93,5 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
-
-    <script>
-        const menuBar = document.querySelector('.menu-bar');
-        const themeOptions = document.querySelector('.theme-options');
-        const menuContent =  document.querySelector('.menu-content');
-        const colorList = ['#e65975', '#37715d', '#3498db', '#9b59b6', '#34495e'];
-
-        const setThemeColor = (color) => {
-            document.documentElement.style.setProperty('--color-1', color);
-        }
-
-        const saveThemeColor = (color = null) => {
-            if (color === null) {
-                return localStorage.getItem('themeColor');
-            }
-
-            localStorage.setItem('themeColor', color);
-            return null;
-        }
-
-        const themeOption = () => {
-            colorList.map(color => {
-                themeOptions.innerHTML += `<li style="background: ${color}"></li>`;
-            });
-
-            themeOptions.childNodes.forEach(element => {
-                element.addEventListener('click', function(e) {
-                    const color = e.target.style.background;
-                    setThemeColor(color);
-                    saveThemeColor(color);
-                });
-            });
-
-            const color = saveThemeColor();
-            setThemeColor(color);
-        }
-
-        const menuToggle = () => {
-            menuBar.addEventListener('click', function () {
-                menuBar.classList.toggle("change");
-
-                if (menuContent.classList.contains('menu-show')) {
-                    menuContent.classList.remove('menu-show');
-                } else {
-                    menuContent.classList.add('menu-show');
-                }
-            });
-        }
-
-        themeOption();
-        menuToggle();
-    </script>
 </body>
 </html>
