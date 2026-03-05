@@ -1,97 +1,252 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="title" content="Website,E-commerce and Software Development,Bug Fixing,Problem Solving">
-    <meta name="description" content="I'm Chanchal Biswas.I'm a senior web developer. I specialize in PHP,MySQL,Javascript,Laravel,Codeigniter,React JS,C and Data Structure.I'm working as a freelancer.">
-    <meta name="keywords" content="e-commerce,schoo,company,inventory,management,shiping,software,bug fixing,php developer,laravel developer, codeigniter developer">
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="English">
-    <meta name="revisit-after" content=" days">
-    <meta name="author" content="Chanchal Biswas">
-    <title>Chanchal : : Web Developer</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Chanchal | Senior Backend Engineer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', '"Inter"', 'sans-serif'],
+                    },
+                    colors: {
+                        ios: {
+                            blue: '#007AFF',
+                            blueDark: '#0A84FF',
+                            green: '#34C759',
+                            grayLabel: '#8E8E93',
+                            bgLight: '#F2F2F7',
+                            bgDark: '#000000',
+                            cardLight: '#FFFFFF',
+                            cardDark: '#1C1C1E',
+                            sepLight: '#E5E5EA',
+                            sepDark: '#38383A'
+                        }
+                    },
+                    boxShadow: {
+                        'ios': '0 4px 24px rgba(0,0,0,0.04)',
+                        'ios-lg': '0 12px 32px rgba(0,0,0,0.06)',
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(24px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Genuine iOS frosted glass */
+        .glass-header {
+            background-color: rgba(255, 255, 255, 0.72);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+        }
+
+        .dark .glass-header {
+            background-color: rgba(28, 28, 30, 0.72);
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-<body class="home">
-    <section>
-        <div class="left-side">
-          <div>
-              <div class="dotted">
-                <div class="line">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div class="line">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div class="line">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+
+<body
+    class="bg-ios-bgLight text-black dark:bg-ios-bgDark dark:text-white transition-colors duration-300 font-sans mx-auto overflow-x-hidden pt-24">
+
+    <!-- Navbar iOS Style -->
+    <nav class="fixed top-0 w-full z-50 glass-header border-b border-ios-sepLight dark:border-ios-sepDark transition-all duration-300"
+        id="navbar">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="flex justify-between items-center h-[52px]"> <!-- Standard iOS top bar height -->
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-xl font-bold tracking-tight" id="nav-logo">Chanchal.</a>
                 </div>
 
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <div id="nav-desktop-links" class="flex items-center space-x-8"></div>
+
+                    <!-- Theme Toggle -->
+                    <button id="theme-toggle"
+                        class="w-9 h-9 flex items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors"
+                        aria-label="Toggle Dark Mode">
+
+                        <i class="ph ph-moon text-lg dark:hidden"></i>
+                        <i class="ph ph-sun text-lg hidden dark:block"></i>
+
+                    </button>
+                </div>
+
+                <!-- Mobile button -->
+                <div class="md:hidden flex items-center gap-2">
+                    <button id="theme-toggle-mobile"
+                        class="w-9 h-9 flex items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors"
+                        aria-label="Toggle Dark Mode">
+                        <i class="ph ph-moon text-lg dark:hidden"></i>
+                        <i class="ph ph-sun text-lg hidden dark:block"></i>
+                    </button>
+                    <button id="mobile-menu-btn" class="p-1.5 text-ios-blue dark:text-ios-blueDark focus:outline-none">
+                        <i class="ph ph-list text-2xl" id="menu-icon-open"></i>
+                        <i class="ph ph-x text-2xl hidden" id="menu-icon-close"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Full Screen overlay style iOS) -->
+        <div id="mobile-menu"
+            class="hidden md:hidden fixed inset-0 top-[52px] bg-ios-bgLight dark:bg-ios-bgDark z-40 overflow-y-auto">
+            <div class="px-6 py-8 space-y-6" id="nav-mobile-links">
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 w-full space-y-8 pb-24">
+
+        <!-- Hero Section -->
+        <section id="hero" class="relative pt-12 pb-8 flex flex-col items-center text-center animate-fade-in-up">
+            <h2 id="hero-subtitle" class="text-sm font-semibold tracking-widest text-ios-grayLabel uppercase mb-4"></h2>
+            <h1 id="hero-title" class="text-5xl md:text-[80px] font-bold tracking-tighter leading-[1.05] mb-6"></h1>
+            <p id="hero-description" class="text-[21px] leading-relaxed text-ios-grayLabel max-w-2xl mx-auto mb-10"></p>
+            <div id="hero-ctas" class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mt-4">
+            </div>
+        </section>
+
+        <!-- About Card (Widget Style) -->
+        <section id="about" class="reveal scroll-mt-24">
+            <div
+                class="bg-ios-cardLight dark:bg-ios-cardDark rounded-[32px] p-8 md:p-12 shadow-ios dark:shadow-none border border-ios-sepLight dark:border-ios-sepDark overflow-hidden flex flex-col md:flex-row gap-12 items-center">
+                <div class="w-full md:w-5/12 aspect-[4/5] md:aspect-square rounded-[24px] overflow-hidden relative">
+                    <img id="about-image" src="" alt="About Background" class="w-full h-full object-cover">
+                    <!-- Subtle inner shadow for the image -->
+                    <div class="absolute inset-0 ring-1 ring-inset ring-black/10 dark:ring-white/10 rounded-[24px]">
+                    </div>
+                </div>
+
+                <div class="w-full md:w-7/12">
+                    <h2 id="about-title" class="text-3xl font-bold tracking-tight mb-4 text-black dark:text-white"></h2>
+                    <p id="about-description" class="text-[17px] leading-relaxed text-ios-grayLabel mb-6">
+                    </p>
+                    <div id="about-stats"
+                        class="flex gap-8 mt-8 pb-4 border-b border-ios-sepLight dark:border-ios-sepDark">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Competencies Grid -->
+        <section id="experience" class="reveal scroll-mt-24 pt-12">
+            <h2 id="experience-title" class="text-[28px] font-bold tracking-tight mb-8 ml-2"></h2>
+
+            <div id="experience-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            </div>
+        </section>
+
+        <!-- Technical Skills iOS List Style -->
+        <section id="skills" class="reveal scroll-mt-24 pt-12">
+            <h2 id="skills-title" class="text-[28px] font-bold tracking-tight mb-8 ml-2"></h2>
+
+            <div id="skills-groups"
+                class="bg-ios-cardLight dark:bg-ios-cardDark rounded-[32px] overflow-hidden shadow-ios dark:shadow-none border border-ios-sepLight dark:border-ios-sepDark">
             </div>
 
-            <ul class="theme-options">
-                <!-- For JS Response -->
-            </ul>
-            <div class="content">
-                <img src="img/chanchal_biswas.jpeg" class="user" alt="">
-                <h1 class="title">Chanchal <span>Biswas</span></h1>
-                <p class="subtitle">
-I am a Senior Software Engineer with over 10 years of hands-on experience building web applications and real-time systems. I specialize in Laravel/PHP, Node.js, C++, PostgreSQL, and cloud-based infrastructure (AWS). I have led projects from initial planning to deployment, creating high-performance systems that handle millions of transactions daily. I also have experience with real-time communication (WebRTC, Socket.io), AI-supported solutions, and enterprise-grade backend development.
+            <div id="skills-tags" class="mt-8 flex flex-wrap justify-center gap-2">
+            </div>
+        </section>
+
+        <!-- Contact Component -->
+        <section id="contact" class="reveal scroll-mt-24 pt-12 pb-12">
+            <div
+                class="bg-ios-blue dark:bg-ios-blueDark rounded-[32px] p-10 md:p-16 text-center text-white relative overflow-hidden shadow-ios-lg">
+                <!-- Decorative blurred circle -->
+                <div
+                    class="absolute -top-32 -left-32 w-64 h-64 bg-white/20 rounded-full blur-3xl mix-blend-overlay pointer-events-none">
+                </div>
+                <div
+                    class="absolute -bottom-32 -right-32 w-64 h-64 bg-black/20 rounded-full blur-3xl mix-blend-overlay pointer-events-none">
+                </div>
+
+                <h2 id="contact-title" class="text-3xl md:text-5xl font-bold tracking-tight mb-4 relative z-10"></h2>
+                <p id="contact-description"
+                    class="text-[17px] md:text-[19px] text-white/90 mb-10 max-w-xl mx-auto leading-relaxed relative z-10 font-medium">
                 </p>
 
-                <div class="download-link">
-                    <a href="resume/20240309-resume.pdf" class="download-cv" download="Chanchal's Resume.pdf">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960" width="22"><path d="M480-322 251-551l68-66 114 114v-323h94v323l114-114 68 66-229 229ZM229-135q-39.05 0-66.525-27.475Q135-189.95 135-229v-143h94v143h502v-143h95v143q0 39-27.769 66.5Q770.463-135 731-135H229Z"/></svg>
-                    DOWNLOAD RESUME
-                </a>
-                </div>
-
-                <div class="contact-info">
-                    Road No #07, Nirala R/A, Khulna 9100, BD<br>
-                    <a class="contact-link" href="tel:+8801711778259">+880 1711-778259</a><br>
-                    <a class="contact-link" href="mailto:me@chanchal.net">me@chanchal.net</a>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4 relative z-10"
+                    id="contact-action">
+                    <a id="contact-email" href=""
+                        class="w-full sm:w-auto px-10 py-4 rounded-full bg-white text-ios-blue dark:text-ios-blueDark font-bold text-[17px] hover:scale-[1.02] active:scale-[0.98] transition-transform shadow-sm flex items-center justify-center gap-2">
+                        <i class="ph-fill ph-envelope-simple text-xl"></i> <span id="contact-email-text"></span>
+                    </a>
                 </div>
             </div>
-          </div>
-                            <div class="social">
-                    <a href="https://github.com/net-chanchal" target="_blank" title="Github"><img src="img/github.svg" width="25" height="25" alt="img/github.svg"></a>
-                    <a href="https://www.linkedin.com/in/net-chanchal" title="Linkedin" target="_blank"><img src="img/linkedin.svg" width="25" height="25" alt="img/linkedin.svg"></a>
-                    <a href="https://www.youtube.com/@net.chanchal" title="Youtube" target="_blank"><img src="img/youtube.svg" width="25" height="25" alt="img/youtube.svg"></a>
-                    <a href="https://www.facebook.com/net.chanchal" title="Facebook" target="_blank"><img src="img/facebook.svg" width="25" height="25" alt="img/facebook.svg"></a>
-                    <a href="#" title="Stack Overflow"><img src="img/stack-overflow.svg" width="25" height="25" alt="img/stack-overflow.svg"></a>
 
-                </div>
-        </div>
-    </section>
+            <div id="contact-socials" class="flex justify-center gap-6 mt-12">
+            </div>
+        </section>
 
-    <h1 class="hero-right">DEVELOPER</h1>
+        <!-- Footer -->
+        <footer
+            class="border-t border-ios-sepLight dark:border-ios-sepDark pt-8 pb-6 flex flex-col md:flex-row justify-between items-center gap-4 reveal">
+            <p class="text-ios-grayLabel text-[13px] font-medium tracking-wide">
+                &copy; <span id="year"></span> <span id="footer-copyright"></span>
+            </p>
+            <p id="footer-designer" class="text-ios-grayLabel text-[13px] font-medium tracking-wide">
+            </p>
+        </footer>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </div>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <!-- App Logic -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
