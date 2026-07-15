@@ -16,7 +16,7 @@ const hostingProducts = [
       "6m": { original: 6.50, current: 5.85, discount: 10 },
       "12m": { original: 6.50, current: 5.20, discount: 20 }
     },
-    affiliateLink: "https://www.jdoqocy.com/click-101825701-17165317",
+    affiliateLink: "https://www.kqzyfj.com/click-101825701-17165317",
     badge: "Value Choice",
     popular: false
   },
@@ -37,7 +37,7 @@ const hostingProducts = [
       "6m": { original: 19.20, current: 17.28, discount: 10 },
       "12m": { original: 19.20, current: 15.36, discount: 20 }
     },
-    affiliateLink: "https://www.jdoqocy.com/click-101825701-17165317",
+    affiliateLink: "https://www.kqzyfj.com/click-101825701-17165317",
     badge: "Most Popular",
     popular: true
   },
@@ -58,7 +58,7 @@ const hostingProducts = [
       "6m": { original: 38.40, current: 34.56, discount: 10 },
       "12m": { original: 38.40, current: 30.72, discount: 20 }
     },
-    affiliateLink: "https://www.jdoqocy.com/click-101825701-17165317",
+    affiliateLink: "https://www.kqzyfj.com/click-101825701-17165317",
     badge: "Enterprise Choice",
     popular: false
   }
