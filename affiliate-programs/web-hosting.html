@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chanchal | High-Performance Cloud VPS & Hosting</title>
+    <meta name="description" content="Curated and tested high-performance Cloud VPS and web hosting programs for enterprise scaling and deployment.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', '"Inter"', 'sans-serif'],
+                    },
+                    colors: {
+                        ios: {
+                            blue: '#007AFF',
+                            blueDark: '#0A84FF',
+                            green: '#34C759',
+                            grayLabel: '#8E8E93',
+                            bgLight: '#F2F2F7',
+                            bgDark: '#000000',
+                            cardLight: '#FFFFFF',
+                            cardDark: '#1C1C1E',
+                            sepLight: '#E5E5EA',
+                            sepDark: '#38383A'
+                        }
+                    },
+                    boxShadow: {
+                        'ios': '0 4px 24px rgba(0,0,0,0.04)',
+                        'ios-lg': '0 12px 32px rgba(0,0,0,0.06)',
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(24px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <style>
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .glass-header {
+            background-color: rgba(255, 255, 255, 0.72);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+        }
+
+        .dark .glass-header {
+            background-color: rgba(28, 28, 30, 0.72);
+        }
+    </style>
+</head>
+
+<body class="bg-ios-bgLight text-black dark:bg-ios-bgDark dark:text-white transition-colors duration-300 font-sans mx-auto overflow-x-hidden pt-24">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 glass-header border-b border-ios-sepLight dark:border-ios-sepDark transition-all duration-300" id="navbar">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="flex justify-between items-center h-[52px]">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="../index.html" class="text-xl font-bold tracking-tight">Chanchal.</a>
+                </div>
+
+                <div class="flex items-center space-x-6">
+                    <a href="../index.html" class="text-[15px] font-medium text-black/80 dark:text-white/80 hover:text-black dark:hover:text-white transition-colors flex items-center gap-1">
+                        <i class="ph ph-arrow-left"></i> Portfolio
+                    </a>
+                    
+                    <!-- Theme Toggle -->
+                    <button id="theme-toggle" class="w-9 h-9 flex items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors" aria-label="Toggle Dark Mode">
+                        <i class="ph ph-moon text-lg theme-icon-moon dark:hidden"></i>
+                        <i class="ph ph-sun text-lg theme-icon-sun hidden dark:block"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 w-full space-y-12 pb-24">
+        
+        <!-- Breadcrumbs -->
+        <nav class="flex text-[13px] font-medium text-ios-grayLabel space-x-2 animate-fade-in-up mt-6" aria-label="Breadcrumb">
+            <a href="../index.html" class="hover:text-black dark:hover:text-white transition-colors">Home</a>
+            <span>/</span>
+            <span class="text-black/60 dark:text-white/60">Affiliate Programs</span>
+            <span>/</span>
+            <span class="text-ios-blue dark:text-ios-blueDark">Web Hosting</span>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="text-center animate-fade-in-up space-y-4 pt-4">
+            <h1 class="text-4xl md:text-[56px] font-bold tracking-tighter leading-[1.1] text-black dark:text-white">
+                High-Performance Web Hosting
+            </h1>
+            <p class="text-lg md:text-[20px] text-ios-grayLabel max-w-2xl mx-auto leading-relaxed">
+                Curated Cloud VPS configurations tested for enterprise deployments, stability, and speed.
+            </p>
+        </section>
+
+        <!-- Dynamic Billing Term Switcher -->
+        <section class="reveal flex flex-col items-center space-y-3">
+            <span class="text-xs font-semibold text-ios-grayLabel uppercase tracking-widest">Billing Period</span>
+            <div class="relative w-full max-w-sm bg-black/5 dark:bg-[#1C1C1E] p-1 rounded-2xl flex items-center justify-between border border-ios-sepLight dark:border-ios-sepDark shadow-sm">
+                <!-- Sliding Indicator Background -->
+                <div id="active-indicator" class="absolute top-1 bottom-1 left-1 rounded-xl bg-white dark:bg-[#2C2C2E] shadow-sm transition-all duration-300 ease-out" style="width: calc(33.333% - 4px); transform: translateX(0px);"></div>
+                
+                <button onclick="setBillingTerm('1m')" id="btn-1m" class="relative z-10 w-1/3 py-2 text-[14px] font-semibold transition-colors duration-200 text-black dark:text-white">
+                    1 Month
+                </button>
+                <button onclick="setBillingTerm('6m')" id="btn-6m" class="relative z-10 w-1/3 py-2 text-[14px] font-semibold transition-colors duration-200 text-ios-grayLabel flex flex-col items-center">
+                    <span>6 Months</span>
+                    <span class="text-[10px] text-ios-green font-bold mt-[-2px]">Save 10%</span>
+                </button>
+                <button onclick="setBillingTerm('12m')" id="btn-12m" class="relative z-10 w-1/3 py-2 text-[14px] font-semibold transition-colors duration-200 text-ios-grayLabel flex flex-col items-center">
+                    <span>12 Months</span>
+                    <span class="text-[10px] text-ios-green font-bold mt-[-2px]">Save 20%</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section class="reveal">
+            <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Injected dynamically by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Disclaimer / Notice -->
+        <section class="reveal max-w-3xl mx-auto text-center border-t border-ios-sepLight dark:border-ios-sepDark pt-10 mt-8">
+            <p class="text-[13px] text-ios-grayLabel leading-relaxed">
+                <i class="ph ph-info mr-1 inline-block align-text-bottom text-base"></i>
+                <strong>Affiliate Disclosure:</strong> When you purchase VPS servers or hosting services through the recommendation links on this site, we may earn an affiliate commission at absolutely no additional cost to you. We only recommend hardware and configurations that meet our strict benchmarks for performance and architecture.
+            </p>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="max-w-6xl mx-auto px-4 sm:px-6 border-t border-ios-sepLight dark:border-ios-sepDark py-8 flex flex-col md:flex-row justify-between items-center gap-4 reveal">
+        <p class="text-ios-grayLabel text-[13px] font-medium tracking-wide">
+            &copy; <span id="year"></span> CHANCHAL. ALL RIGHTS RESERVED.
+        </p>
+        <p class="text-ios-grayLabel text-[13px] font-medium tracking-wide">
+            DESIGNED IN CALIFORNIA
+        </p>
+    </footer>
+
+    <!-- App Logic Scripts -->
+    <script src="products.js"></script>
+    <script>
+        let currentTerm = '1m';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Setup current year
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // Setup Theme Handling
+            const html = document.documentElement;
+            const themeToggle = document.getElementById('theme-toggle');
+
+            const getPreferredTheme = () => {
+                if (localStorage.getItem('theme')) {
+                    return localStorage.getItem('theme');
+                }
+                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            };
+
+             const setTheme = (theme) => {
+                if (theme === 'dark') {
+                    html.classList.add('dark');
+                    html.classList.remove('light');
+                } else {
+                    html.classList.remove('dark');
+                    html.classList.add('light');
+                }
+                localStorage.setItem('theme', theme);
+            };
+
+            // Initialize Theme
+            setTheme(getPreferredTheme());
+
+            // Add Click Handler
+            themeToggle.addEventListener('click', () => {
+                const activeTheme = html.classList.contains('dark') ? 'light' : 'dark';
+                setTheme(activeTheme);
+            });
+
+            // Scroll animations
+            const revealElements = document.querySelectorAll('.reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -20px 0px' });
+
+            revealElements.forEach(el => observer.observe(el));
+            
+            // Render initial products
+            renderProducts();
+        });
+
+        function setBillingTerm(term) {
+            currentTerm = term;
+            
+            // Animate sliding selector indicator
+            const activeIndicator = document.getElementById('active-indicator');
+            const btns = ['1m', '6m', '12m'];
+            const idx = btns.indexOf(term);
+            
+            // Move indicator
+            if (idx === 0) activeIndicator.style.transform = `translateX(0px)`;
+            if (idx === 1) activeIndicator.style.transform = `translateX(calc(100% + 4px))`;
+            if (idx === 2) activeIndicator.style.transform = `translateX(calc(200% + 8px))`;
+
+            // Reset classes
+            btns.forEach(b => {
+                const btn = document.getElementById(`btn-${b}`);
+                if (b === term) {
+                    btn.classList.add('text-black', 'dark:text-white');
+                    btn.classList.remove('text-ios-grayLabel');
+                } else {
+                    btn.classList.remove('text-black', 'dark:text-white');
+                    btn.classList.add('text-ios-grayLabel');
+                }
+            });
+
+            // Re-render prices dynamically with a smooth fade
+            const pricingContainers = document.querySelectorAll('.pricing-container');
+            pricingContainers.forEach(container => {
+                container.style.opacity = '0';
+                container.style.transform = 'translateY(-4px)';
+            });
+
+            setTimeout(() => {
+                renderProducts();
+            }, 150);
+        }
+
+        function renderProducts() {
+            const grid = document.getElementById('product-grid');
+            grid.innerHTML = '';
+
+            if (typeof hostingProducts === 'undefined') {
+                grid.innerHTML = '<div class="col-span-3 text-center py-10 text-ios-grayLabel">No products found.</div>';
+                return;
+            }
+
+            hostingProducts.forEach(prod => {
+                const pricingInfo = prod.pricing[currentTerm];
+                const originalPrice = pricingInfo.original.toFixed(2);
+                const currentPrice = pricingInfo.current.toFixed(2);
+                const discount = pricingInfo.discount;
+
+                // Build spec items list
+                let specsListHtml = '';
+                prod.specs.forEach(spec => {
+                    specsListHtml += `
+                        <div class="flex items-center gap-3 py-1">
+                            <div class="w-8 h-8 rounded-lg bg-ios-blue/10 dark:bg-ios-blueDark/20 flex items-center justify-center text-ios-blue dark:text-ios-blueDark flex-shrink-0">
+                                <i class="ph ${spec.icon} text-lg"></i>
+                            </div>
+                            <div>
+                                <span class="text-[12px] text-ios-grayLabel block leading-none">${spec.name}</span>
+                                <span class="text-[14px] font-semibold text-black dark:text-white">${spec.value}</span>
+                            </div>
+                        </div>
+                    `;
+                });
+
+                const badgeHtml = prod.badge ? `
+                    <span class="absolute top-4 right-4 bg-ios-blue dark:bg-ios-blueDark text-white text-[11px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm z-10 animate-pulse">
+                        ${prod.badge}
+                    </span>
+                ` : '';
+
+                const popularCardStyles = prod.popular 
+                    ? 'ring-2 ring-ios-blue dark:ring-ios-blueDark shadow-ios-lg scale-[1.01]' 
+                    : 'shadow-ios dark:shadow-none hover:shadow-ios-lg';
+
+                const cardHtml = `
+                    <div class="relative bg-ios-cardLight dark:bg-ios-cardDark rounded-[28px] p-6 border border-ios-sepLight dark:border-ios-sepDark flex flex-col justify-between h-full transform hover:scale-[1.02] active:scale-[0.99] transition-all duration-300 ease-out ${popularCardStyles}">
+                        ${badgeHtml}
+                        
+                        <div>
+                            <!-- Header -->
+                            <div class="space-y-1 pr-16">
+                                <h3 class="text-xs font-bold uppercase tracking-widest text-ios-blue dark:text-ios-blueDark">
+                                    ${prod.provider}
+                                </h3>
+                                <h2 class="text-2xl font-bold tracking-tight text-black dark:text-white">
+                                    ${prod.title}
+                                </h2>
+                                <p class="text-[13px] text-ios-grayLabel leading-tight">
+                                    ${prod.subtitle}
+                                </p>
+                            </div>
+
+                            <hr class="border-ios-sepLight dark:border-ios-sepDark/50 my-5" />
+
+                            <!-- Pricing -->
+                            <div class="pricing-container transition-all duration-300 ease-out flex flex-col justify-center min-h-[76px]" style="opacity: 1; transform: translateY(0);">
+                                <div class="flex items-baseline gap-1">
+                                    <span class="text-[17px] font-bold text-ios-grayLabel align-top">$</span>
+                                    <span class="text-4xl md:text-5xl font-black tracking-tight text-black dark:text-white">${currentPrice.split('.')[0]}</span>
+                                    <span class="text-lg font-bold text-black/80 dark:text-white/80">.${currentPrice.split('.')[1]}</span>
+                                    <span class="text-xs font-semibold text-ios-grayLabel ml-1">/ month</span>
+                                </div>
+                                
+                                <div class="flex items-center gap-2 mt-1 min-h-[20px]">
+                                    ${discount > 0 ? `
+                                        <span class="text-xs text-ios-grayLabel line-through">$${originalPrice} / mo</span>
+                                        <span class="text-[11px] font-bold text-ios-green bg-ios-green/10 px-2 py-0.5 rounded-md">Save ${discount}%</span>
+                                    ` : `
+                                        <span class="text-xs text-ios-grayLabel">Standard monthly pricing</span>
+                                    `}
+                                </div>
+                            </div>
+
+                            <hr class="border-ios-sepLight dark:border-ios-sepDark/50 my-5" />
+
+                            <!-- Specs -->
+                            <div class="space-y-3">
+                                <h4 class="text-[11px] font-bold text-ios-grayLabel uppercase tracking-wider ml-1">Technical Specs</h4>
+                                <div class="grid grid-cols-1 gap-3">
+                                    ${specsListHtml}
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CTA Button -->
+                        <div class="mt-8">
+                            <a href="${prod.affiliateLink}" target="_blank" rel="noopener noreferrer" 
+                               class="w-full py-4 rounded-2xl flex items-center justify-center gap-2 text-center text-[15px] font-bold transition-all duration-200 active:scale-[0.98] ${
+                                   prod.popular
+                                   ? 'bg-ios-blue dark:bg-ios-blueDark text-white hover:opacity-90 shadow-md shadow-ios-blue/10'
+                                   : 'bg-black/5 dark:bg-white/10 text-black dark:text-white hover:bg-black/10 dark:hover:bg-white/20'
+                               }">
+                                <span>Configure Server</span>
+                                <i class="ph ph-arrow-square-out text-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                `;
+
+                grid.insertAdjacentHTML('beforeend', cardHtml);
+            });
+        }
+    </script>
+</body>
+
+</html>
